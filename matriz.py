@@ -73,7 +73,7 @@ def cifradobasico():
 
 
     key = 3
-    word = 'HOLA'
+    word = 'MOGO'
 
     result = ''
     for char in word:
@@ -83,7 +83,7 @@ def cifradobasico():
             for j in range(len(table[i])):
                 if char == table[i][j]:
                     found = True
-                    result += str(((i*4) + j) + key) # AQUI, CIEGO
+                    result += str(((i*4) + j) + key)
                     break
             
             if found: break
@@ -184,7 +184,7 @@ def promediogeneral():
             if matriz[j][i] >= promedio:
                 mayor = matriz[j][i]
                 p = j+1     
-                print("En la ciudad",i+1 ,  "con una precipitacion de:",mayor, " y el dia es",p )
+                print("En la ciudad",i+1 ,  "la precipitación es ",mayor, "respecto al promedio general",promedio," y el dia es",p )
 
 def menor():
     ciudades = int(input("Cuantas Ciudades? "))
@@ -264,4 +264,4 @@ def letra_D():
                 print(' ', end='')
         print()
         
-letra_D()
+imprimircruz()
